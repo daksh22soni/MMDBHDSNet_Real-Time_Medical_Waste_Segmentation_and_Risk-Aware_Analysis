@@ -1,0 +1,32 @@
+# ============================================================
+# DBHDSNet — Phase 3 Requirements (installs on top of Phase 2)
+# pip install -r requirements_phase3.txt
+# ============================================================
+
+# ── GNN (torch-geometric ecosystem) ──────────────────────────
+torch-geometric>=2.4.0
+# torch-scatter and torch-sparse must match your torch+cuda version.
+# Find the correct wheel at: https://data.pyg.org/whl/
+# Example for torch==2.1.0 + CUDA 11.8:
+#   pip install torch-scatter torch-sparse -f https://data.pyg.org/whl/torch-2.1.0+cu118.html
+
+# ── Calibration & statistics ──────────────────────────────────
+netcal>=1.3.5            # ECE / ACE / MCE / reliability diagrams
+scikit-learn>=1.3.0      # isotonic regression post-hoc calibration
+
+# ── Graph visualisation ───────────────────────────────────────
+networkx>=3.1            # scene graph visualisation + analysis
+
+# ── Already present from Phase 2 (listed for completeness) ───
+torch>=2.1.0
+torchvision>=0.16.0
+numpy>=1.24.0
+tqdm>=4.66.0
+PyYAML>=6.0.1
+tensorboard>=2.14.0
+scipy>=1.11.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+psutil>=5.9.0
+timm>=0.9.12
+albumentations>=1.3.1

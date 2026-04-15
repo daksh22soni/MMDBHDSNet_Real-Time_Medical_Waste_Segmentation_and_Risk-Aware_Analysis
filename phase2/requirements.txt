@@ -1,0 +1,39 @@
+# ============================================================
+# DBHDSNet — Phase 2 Requirements
+# Install: pip install -r requirements.txt
+# CUDA 11.8+ recommended for GPU training
+# ============================================================
+
+# Core deep learning
+torch>=2.1.0
+torchvision>=0.16.0
+torchaudio>=2.1.0  # needed for some torch utils
+
+# Transformer backbone (ViT-Small)
+timm>=0.9.12
+
+# Progress bars (continuous per-epoch)
+tqdm>=4.66.0
+
+# Data handling
+numpy>=1.24.0
+opencv-python>=4.8.0
+Pillow>=10.0.0
+PyYAML>=6.0.1
+
+# Augmentation pipeline
+albumentations>=1.3.1
+
+# Metrics & evaluation
+pycocotools>=2.0.7
+scipy>=1.11.0
+
+# Visualization & logging
+matplotlib>=3.7.0
+seaborn>=0.12.0
+tensorboard>=2.14.0
+
+# Utilities
+psutil>=5.9.0       # system resource monitoring
+rich>=13.0.0        # beautiful terminal output
+colorama>=0.4.6     # cross-platform ANSI colours

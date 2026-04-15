@@ -1,0 +1,40 @@
+[2026-03-22 17:01:47][INFO] Random seed: 42
+[2026-03-22 17:01:47][INFO] Device: cuda
+[2026-03-22 17:01:47][INFO] GPU[0] NVIDIA GeForce RTX 2050 | Allocated 0.00GB / Reserved 0.00GB / Total 4.29GB
+
+══════════════════════════════════════════════════════════════════════
+  DBHDSNet — Phase 2 Training
+══════════════════════════════════════════════════════════════════════
+
+  Dataset root  : C:\Users\gahan\Documents\Daksh\sem 6\Deep Learning\dbhdsnet_project\master_dataset
+  Classes       : 38
+  Image size    : 640
+  Epochs        : 150
+  Batch size    : 8
+  AMP           : True
+  EMA           : True
+  Early stopping: patience=25
+
+[2026-03-22 17:01:47][INFO] Building data loaders…
+[Dataset] train: 10111 valid samples found.
+[Dataset] valid: 2889 valid samples found.
+[Dataset] test: 1445 valid samples found.
+[2026-03-22 17:01:47][INFO]   Train: 10111 images / 1263 batches
+[2026-03-22 17:01:47][INFO]   Valid: 2889 images / 723 batches
+[2026-03-22 17:01:47][INFO]   Test : 1445 images
+[2026-03-22 17:01:47][INFO] Building DBHDSNet…
+[LoRA] Injected into 6 layers: 0.attn.out_proj, 1.attn.out_proj, 2.attn.out_proj, 3.attn.out_proj, 4.attn.out_proj…
+[2026-03-22 17:02:18][INFO]   Backbone frozen for warm-up epochs.
+[2026-03-22 17:02:18][INFO]   Total params   : 48,515,855
+[2026-03-22 17:02:18][INFO]   Trainable      : 24,123,087 (49.7%)
+[2026-03-22 17:02:18][INFO]   Frozen         : 24,392,768
+
+══════════════════════════════════════════════════════════════════════
+  DRY RUN — 1 batch forward + backward
+══════════════════════════════════════════════════════════════════════
+
+
+══════════════════════════════════════════════════════════════════════
+  Overfit Guard — 10-step single-batch test
+══════════════════════════════════════════════════════════════════════
+

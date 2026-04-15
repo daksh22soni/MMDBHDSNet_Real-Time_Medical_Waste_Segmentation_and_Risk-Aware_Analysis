@@ -1,0 +1,36 @@
+# ============================================================
+# DBHDSNet — Phase 4 Requirements (Federated Learning)
+# Install on top of Phase 2 requirements.
+# pip install -r requirements_phase4.txt
+# ============================================================
+
+# ── Phase 2 base (must be installed first) ────────────────────
+# torch>=2.1.0
+# torchvision>=0.16.0
+# tqdm>=4.66.0
+# numpy>=1.24.0
+# PyYAML>=6.0.1
+# tensorboard>=2.14.0
+# scipy>=1.11.0
+# psutil>=5.9.0
+# opencv-python>=4.8.0
+# timm>=0.9.12
+# albumentations>=1.3.1
+
+# ── Federated Learning ────────────────────────────────────────
+# No Flower/PySyft dependency: we implement FL from scratch
+# for full PhD-level control over aggregation & DP mechanisms.
+
+# ── Differential Privacy (RDP accountant) ────────────────────
+prv-accountant>=0.3.1          # Privacy Random Variables accountant (state-of-the-art)
+autodp>=0.2.3.1                # Alternative RDP accountant (cross-validation)
+
+# ── Privacy / Security ────────────────────────────────────────
+cryptography>=41.0.0           # For secure aggregation simulation
+
+# ── Analysis & Reporting ──────────────────────────────────────
+matplotlib>=3.7.0
+seaborn>=0.12.0
+pandas>=2.0.0
+scikit-learn>=1.3.0
+reportlab>=4.0.0               # PDF privacy audit report generation
